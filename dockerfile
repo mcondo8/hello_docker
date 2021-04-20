@@ -10,7 +10,7 @@ WORKDIR /
 RUN apt-get update
 RUN pip install -r requirements.txt
 
-COPY ./app /app
+COPY /app /app
 
-ENTRYPOINT ["python-app"]
-CMD ["python", "/app/app.py"]
+ENTRYPOINT ["python"]
+CMD ["app/app.py"]
